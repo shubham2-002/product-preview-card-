@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3eae3;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    width: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.desktop-img{
+    width: 330px;
+    border-radius: 10px 0 0 10px;
+    height: 500px;
+}
+.desription{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 40px;
+}
+.info{
+    margin-top: 40px;
+    line-height: 20px;
+    color: #898a90;
+    font-size: 14px;
+}
+.p{
+    margin: 30px 0 5px 0;
+    color: #4d4e4f;
+    letter-spacing: 5px;
+}
+.heading{
+    margin: 10px 0 0 0;
+    line-height: 34px;
+}
+.price-box{
+    display: flex;
+   text-align: center;
+   align-items: center;
+   
+}
+.price-box > h1{
+    color: hsl(158, 36%, 37%);
+    padding-right: 3rem;
+}
+h5{
+    text-decoration: line-through;
+    color: #898a90;
+    
+}
+.buy-box{
+    margin: 0 40px 0 40px;
+}
+button{
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    width: 100%;
+    height: 57px;
+    border-radius: 8px ;
+    border: #fff;
+    text-align: center;
+}
+h1{
+    font-family: "Fraunces", serif;
+}
+button:hover {
+    background-color: hsl(158, 45%, 20%);
+}
+
+button:active {
+    background-color: hsl(158, 45%, 20%);
+}
+button>svg{
+    margin-right: 10px;
+    position: relative;
+    top:3px;
+}
+@media screen and (min-width:700px){
+    .mobile-img{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .container{
+        width: 380px;
+        height: 640px;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .info{
+        margin-top: 10px;
+    }
+    .heading{
+        margin: 5px;
+    }
+    .desription{
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px -6px 40px;
+    }
+    .buy-box{
+        margin: -15px 40px 10px 40px;
+    }
+}
